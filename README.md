@@ -5,4 +5,4 @@ Project for finding the best places in {location} with going through events per 
 
 Front End side: ViteJS, TailwindCSS, Flowbite, shadcn, to be added if more..
 
-Back End side: NestJS, GraphQL, Prisma, MikroORM, to be added if more..
+Back End side: Postresql, NestJS, GraphQL, Prisma, to be added if more..
