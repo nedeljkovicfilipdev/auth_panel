@@ -17,19 +17,19 @@ let UsersService = class UsersService {
         this.prisma = prisma;
     }
     create(createUserDto) {
-        return 'This action adds a new user';
+        return this.prisma.user.create({ data: createUserDto });
     }
     findAll() {
         return this.prisma.user.findMany();
     }
     findOne(id) {
-        return `This action returns a #${id} user`;
+        return this.prisma.user.findUnique({ where: { id } });
     }
     update(id, updateUserDto) {
-        return `This action updates a #${id} user`;
+        return this.prisma.user.update({ where: { id }, data: updateUserDto });
     }
     remove(id) {
-        return `This action removes a #${id} user`;
+        return this.prisma.user.delete({ where: { id } });
     }
 };
 exports.UsersService = UsersService;

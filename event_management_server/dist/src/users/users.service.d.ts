@@ -4,7 +4,17 @@ import { PrismaService } from 'src/prisma/prisma.service';
 export declare class UsersService {
     private prisma;
     constructor(prisma: PrismaService);
-    create(createUserDto: CreateUserDto): string;
+    create(createUserDto: CreateUserDto): import(".prisma/client").Prisma.Prisma__UserClient<{
+        id: number;
+        username: string;
+        email: string;
+        password: string;
+        firstName: string;
+        lastName: string;
+        phoneNumber: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }, never, import("@prisma/client/runtime/library").DefaultArgs>;
     findAll(): import(".prisma/client").Prisma.PrismaPromise<{
         id: number;
         username: string;
@@ -16,7 +26,37 @@ export declare class UsersService {
         createdAt: Date;
         updatedAt: Date;
     }[]>;
-    findOne(id: number): string;
-    update(id: number, updateUserDto: UpdateUserDto): string;
-    remove(id: number): string;
+    findOne(id: number): import(".prisma/client").Prisma.Prisma__UserClient<{
+        id: number;
+        username: string;
+        email: string;
+        password: string;
+        firstName: string;
+        lastName: string;
+        phoneNumber: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }, null, import("@prisma/client/runtime/library").DefaultArgs>;
+    update(id: number, updateUserDto: UpdateUserDto): import(".prisma/client").Prisma.Prisma__UserClient<{
+        id: number;
+        username: string;
+        email: string;
+        password: string;
+        firstName: string;
+        lastName: string;
+        phoneNumber: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }, never, import("@prisma/client/runtime/library").DefaultArgs>;
+    remove(id: number): import(".prisma/client").Prisma.Prisma__UserClient<{
+        id: number;
+        username: string;
+        email: string;
+        password: string;
+        firstName: string;
+        lastName: string;
+        phoneNumber: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }, never, import("@prisma/client/runtime/library").DefaultArgs>;
 }
