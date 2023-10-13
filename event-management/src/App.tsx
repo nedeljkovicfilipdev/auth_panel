@@ -20,6 +20,7 @@ function App() {
     navigate('/about')
   }
 
+  ssss
   return (
     <>
     <div className='flex items-center justify-center h-[calc(100vh-74px)] rounded-md p-8 space-x-12'>
